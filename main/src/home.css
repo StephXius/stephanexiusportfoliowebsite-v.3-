@@ -1,5 +1,17 @@
-* {
-    box-sizing: border-box;
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  html{
+      box-sizing: border-box;
+      scroll-behavior: smooth;
   }
   
   body {
@@ -9,20 +21,24 @@
   .navbar{
     overflow: hidden;
     background-color: red;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 
-  .navbar ul {
+  .nav-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-weight: bolder;
   }
 
-  .navbar ul li {
+  .nav-list li {
     float: left;
   }
 
-  .navbar ul li a {
+  .nav-list li a {
     display: block;
     color: black;
     text-align: center;
@@ -30,6 +46,60 @@
     text-decoration: none;
   }
 
-  .navbar ul li a:hover{
+  .nav-list li a:hover{
     color:white;
+  }
+
+  @media screen and (max-width: 600px) { 
+    ul.nav-list li {float: none;}
+  }
+
+  .profile-pic{
+    border-radius: 50%;
+    bottom: 55%;
+    position: absolute;
+    width: auto;
+    height: auto;
+  }
+
+  .home-page{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color:#000;
+  }
+
+  #home-header{
+    color: white;
+    font-weight:bolder;
+    font-size: 30px;
+  }
+
+  #home-text{
+    color: white;
+    font-weight:bolder;
+    margin-top:20px;
+  }
+
+  .about-page{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color:#000;
+  }
+
+  .about-content-container h3{
+    color: white;
+    font-weight:bolder;
+  }
+
+  .about-content-container p{
+    color: white;
+    font-weight:bolder;
   }
