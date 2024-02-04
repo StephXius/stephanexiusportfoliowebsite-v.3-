@@ -24,6 +24,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
   }
 
   .nav-list {
@@ -60,6 +61,7 @@
     position: absolute;
     width: auto;
     height: auto;
+    margin-right: 69px;
   }
 
   .home-page{
@@ -75,12 +77,14 @@
   #home-header{
     color: white;
     font-weight:bolder;
-    font-size: 30px;
+    font-size: 50px;
+    margin-top:20px;
   }
 
   #home-text{
     color: white;
     font-weight:bolder;
+    font-size: 20px;
     margin-top:20px;
   }
 
@@ -94,12 +98,22 @@
     background-color:#000;
   }
 
-  .about-content-container h3{
+  .about-content-container p{
     color: white;
     font-weight:bolder;
   }
 
-  .about-content-container p{
-    color: white;
-    font-weight:bolder;
+  #about-text-one{
+    font-size:35px;
+    text-align: center;
+  }
+
+  #about-text-two {
+    text-indent: 30px;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    font-size: 20px; /* reduced font size */
+    line-height: 1.5; /* increased line height */
+    text-align:inherit;
+    margin-top: 30px;
   }

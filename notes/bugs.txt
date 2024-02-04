@@ -1,1 +1,1 @@
-* Fix image not hiding under navbar
+*Implement flex box into code
