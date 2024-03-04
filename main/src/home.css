@@ -1,171 +1,155 @@
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-  *{
-    margin: 0;
-    padding: 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  html{
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-  }
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-  @media (max-width: 50px){
-    html{
-      font-size: 30%;
-    }
+@media (max-width: 600px) {
+  html {
+    font-size: 15px; /* Adjust font size for smaller screens */
   }
-  
-  @media (max-width: 25px){
-    html{
-      font-size: 20%;
-    }
-  }
-  
-  @media (max-width: 20px){
-    html{
-      font-size: 15%;
-    }
-  }
-  
-  body {
-    margin: 0;
-  }
+}
 
-  .navbar{
-    overflow: hidden;
-    background-color: red;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+@media (max-width: 400px) {
+  html {
+    font-size: 12px; /* Further adjust font size for very small screens */
   }
+}
 
-  .nav-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-weight: bolder;
-  }
+body {
+  margin: 0;
+}
 
-  .nav-list li {
-    float: left;
-  }
+.navbar {
+  overflow: hidden;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
 
-  .nav-list li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-weight: bolder;
+}
 
-  .nav-list li a:hover{
-    color:white;
-  }
+.nav-list li {
+  float: left;
+}
 
-  @media screen and (max-width: 600px) { 
-    ul.nav-list li, .home-page {flex-direction: column;}
-  }
+.nav-list li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  .profile-pic{
-    border-radius: 50%;
-    height: auto;
-    max-width: auto;
-    object-fit: contain;
-  }
+.nav-list li a:hover {
+  color: white;
+}
 
-  .home-page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color:#000;
-  }
+.profile-pic {
+  border-radius: 50%;
+  max-width: 100%; /* Ensure profile pic fits within its container */
+  height: auto;
+  object-fit: contain;
+}
 
+.home-page,
+.about-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* Use min-height to ensure content takes up full viewport height */
+  background-color: #000;
+}
 
-  #home-header{
-    color: white;
-    font-weight:bolder;
-    font-size: 50px;
-  }
+#home-header,
+#home-text,
+#about-text-one,
+.about-content-container p {
+  color: white;
+  font-weight: bolder;
+}
 
-  #home-text{
-    color: white;
-    font-weight:bolder;
-    font-size: 20px;
-    
-  }
+#home-header {
+  font-size: 3em; /* Responsive font size for home header */
+}
 
-  .about-page{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color:#000;
-    flex: auto;
-  }
+#home-text {
+  font-size: 1.5em; /* Responsive font size for home text */
+  padding-top: 3%;
+}
 
-  .about-content-container p{
-    color: white;
-    font-weight:bolder;
-  }
+#about-text-one {
+  font-size: 2em; /* Responsive font size for about text */
+  text-align: center;
+}
 
-  #about-text-one{
-    font-size:35px;
-    text-align: center;
-  }
+#about-text-two {
+  font-size: 1em; /* Responsive font size for about text */
+  margin-top: 20px; /* Adjusted margin for smaller screens */
+  margin-left: 5px;
+  word-break: normal;
+}
 
-  #about-text-two {
-    text-indent: 30px;
-    overflow-wrap: break-word;
-    word-break: keep-all;
-    font-size: 20px; /* reduced font size */
-    line-height: 1.5; /* increased line height */
-    text-align:inherit;
-    margin-top: 30px;
-  }
+.barchart-container {
+  padding-top: 5%;
+  padding-right: 20%;
+}
 
-  .barchart-container p{
-    color: white;
-  }
+.barchart-container p{
+  color: white;
+}
 
-  .skills-container {
-    width: 600%; /* Full width */
-    background-color: #ddd; /* Grey background */
-  }
+.skills-container {
+  width: 400%; /* Adjusted width for smaller screens */
+  background-color: #ddd;
+}
 
-  .skills {
-    text-align: right; /* Right-align text */
-    padding-top: 10px; /* Add top padding */
-    padding-bottom: 10px; /* Add bottom padding */
-    color: white; /* White text color */
-  }
+.skills {
+  text-align: right;
+  padding: 10px;
+  color: white;
+}
 
-  .html {
-    width: 90%;
-    background-color: #f44336;
-  }
+/* Adjusted width and background color for smaller screens */
+.html {
+  width: 90%;
+  background-color: #f44336;
+}
 
-  .css {
-    width: 80%;
-    background-color: #f44336;
-  }
+.css,
+.js,
+.java,
+.c-sharp {
+  width: 60%;
+  background-color: #f44336;
+}
 
-  .js {
-    width: 65%;
-    background-color: #f44336;
-  }
+.python {
+  width: 50%;
+  background-color: #f44336;
+}
 
-  .java {
-    
-  }
+.sql {
+  width: 70%;
+  background-color: #f44336;
+}
