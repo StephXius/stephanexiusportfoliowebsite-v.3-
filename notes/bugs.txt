@@ -1,1 +1,1 @@
-*Implement flex box into code
+*Allow images to have a hover effect that shows the name of the project
