@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 * {
@@ -97,7 +97,8 @@ body {
 }
 
 #projects-header {
-  margin-bottom: 20%;
+  margin-top: 5%;
+  color: #DF0E0E;
 }
 
 #home-text {
@@ -161,63 +162,43 @@ body {
   background-color: #f44336;
 }
 
-/* For desktop screens */
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-/* For mobile screens */
-@media (max-width: 768px) {
-  .carousel-inner {
-    display: block;
-    white-space: nowrap;
-    overflow-x: auto;
-  }
-
-  .carousel-item {
-    display: inline-block;
-    width: auto;
-    vertical-align: top;
-  }
-
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* For smaller mobile screens */
-@media (max-width: 576px) {
-  .carousel-inner {
-    display: block;
-    white-space: nowrap;
-    overflow-x: auto;
-  }
-
-  .carousel-item {
-    display: inline-block;
-    width: auto;
-    vertical-align: top;
-  }
-
-  .grid-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-.grid-item {
-  display: flex;
-  justify-content: center;
+.projects-item {
+  margin: 10px;
   align-items: center;
 }
 
-.grid-item img {
-  max-width: 100%;
+.projects-item img{
+  max-width: 100%; /* Ensure images don't exceed their container */
   height: auto;
 }
+
+.projects-row {
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.projects-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5px;
+}
+
+/* Responsive design for mobile screens (mobile) */
+@media (max-width: 768px) {
+  .projects-column {
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+  }
+}
+
+/* Responsive deisign for smaller mobile screens */
+@media (max-width:  480px) {
+  .projects-column {
+    display: inline-block;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3.5px;
+  }
+}
+
 
