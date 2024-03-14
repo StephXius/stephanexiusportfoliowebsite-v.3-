@@ -1,1 +1,1 @@
-*Allow images to have a hover effect that shows the name of the project
+Add button to hover effect in Project section(the button should be a link to the project)
