@@ -16,13 +16,15 @@ html {
 
 @media (max-width: 600px) {
   html {
-    font-size: 15px; /* Adjust font size for smaller screens */
+    font-size: 15px;
+    /* Adjust font size for smaller screens */
   }
 }
 
 @media (max-width: 400px) {
   html {
-    font-size: 12px; /* Further adjust font size for very small screens */
+    font-size: 12px;
+    /* Further adjust font size for very small screens */
   }
 }
 
@@ -65,7 +67,8 @@ body {
 
 .profile-pic {
   border-radius: 50%;
-  max-width: 100%; /* Ensure profile pic fits within its container */
+  max-width: 100%;
+  /* Ensure profile pic fits within its container */
   height: auto;
   object-fit: contain;
 }
@@ -78,7 +81,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh; /* Use min-height to ensure content takes up full viewport height */
+  min-height: 100vh;
+  /* Use min-height to ensure content takes up full viewport height */
   background-color: #000;
 }
 
@@ -93,7 +97,8 @@ body {
 
 #home-header,
 #projects-header {
-  font-size: 3em; /* Responsive font size for home header and projects header */
+  font-size: 3em;
+  /* Responsive font size for home header and projects header */
 }
 
 #projects-header {
@@ -102,18 +107,22 @@ body {
 }
 
 #home-text {
-  font-size: 1.5em; /* Responsive font size for home text */
+  font-size: 1.5em;
+  /* Responsive font size for home text */
   padding-top: 3%;
 }
 
 #about-text-one {
-  font-size: 2em; /* Responsive font size for about text */
+  font-size: 2em;
+  /* Responsive font size for about text */
   text-align: center;
 }
 
 #about-text-two {
-  font-size: 1em; /* Responsive font size for about text */
-  margin-top: 20px; /* Adjusted margin for smaller screens */
+  font-size: 1em;
+  /* Responsive font size for about text */
+  margin-top: 20px;
+  /* Adjusted margin for smaller screens */
   margin-left: 5px;
   word-break: normal;
 }
@@ -137,12 +146,13 @@ body {
   }
 }
 
-.barchart-container p{
+.barchart-container p {
   color: white;
 }
 
 .skills-container {
-  width: 400%; /* Adjusted width for smaller screens */
+  width: 400%;
+  /* Adjusted width for smaller screens */
   background-color: #ddd;
 }
 
@@ -179,7 +189,8 @@ body {
 .projects-item {
   margin: 10px;
   align-items: center;
-  position: relative; /* Add this line to make the overlay relative to the projects-item */
+  position: relative;
+  /* Add this line to make the overlay relative to the projects-item */
 }
 
 
@@ -194,6 +205,7 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   font-weight: bolder;
+  cursor: default;
 }
 
 .overlay {
@@ -204,7 +216,8 @@ body {
   height: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgb(255, 0, 0); /* Change background color and opacity as needed */
+  background-color: rgb(255, 0, 0);
+  /* Change background color and opacity as needed */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,8 +227,9 @@ body {
   opacity: 0.9;
 }
 
-.projects-item img{
-  max-width: 100%; /* Ensure images don't exceed their container */
+.projects-item img {
+  max-width: 100%;
+  /* Ensure images don't exceed their container */
   height: auto;
 }
 
@@ -240,7 +254,7 @@ body {
 }
 
 /* Responsive deisign for smaller mobile screens */
-@media (max-width:  480px) {
+@media (max-width: 480px) {
   .projects-column {
     display: inline-block;
     grid-template-columns: repeat(1, 1fr);
@@ -248,7 +262,7 @@ body {
   }
 }
 
-#projects-button{
+#projects-button {
   margin-bottom: 20%;
   appearance: none;
   background-color: #2ea44f;
@@ -259,7 +273,7 @@ body {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -300,4 +314,119 @@ body {
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 
+.project-link-button {
+  margin-top: 140%;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 12px;
+  width: auto;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: black;
+}
+
+.contact-page-header > h2 {
+  font-size: 6rem;
+  color: white;
+}
+
+@media (max-width: 28.75em) {
+  .contact-page-header > h2 {
+    font-size: 4rem;
+    color: white;
+  }
+}
+
+.contact-page-header > p {
+  font-style: italic;
+  color: white;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  color: #DF0E0E;
+}
+
+.contact-links > a {
+    text-decoration: none;
+    color:white;
+}
+
+.contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+    transform: translateY(8px);
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+.btn{
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  font-size: 2rem;
+  background:black;
+  transition: background 2.0s ease-out;
+}
+
+.btn:hover{
+  background:#E53B09;
+}
+
+.btn:hover > i {
+  transform: translateX(2px);
+}
+
+.btn > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: red;
+  border-top: 4px solid black;
+}
+
+footer > p {
+  margin: 2rem;
+  color: white;
+}
+
+footer i {
+  vertical-align: middle;
+  color: white;
+}
+
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
