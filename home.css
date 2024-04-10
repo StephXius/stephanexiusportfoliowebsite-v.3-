@@ -67,7 +67,7 @@ body {
 
 .profile-pic {
   border-radius: 50%;
-  max-width: 100%;
+  max-width: 300px;
   /* Ensure profile pic fits within its container */
   height: auto;
   object-fit: contain;
